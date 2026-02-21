@@ -50,13 +50,3 @@
   <a href="https://github.com/nanfangns">GitHub</a> •
   <a href="https://github.com/nanfangns?tab=repositories">Repositories</a>
 </p>
-
----
-
-## Credits
-
-- Banner SVG: [Capsule Render](https://capsule-render.vercel.app/)
-- Typing SVG: [readme-typing-svg](https://readme-typing-svg.demolab.com/)
-- Skill badges: [Shields.io](https://shields.io/)
-- GitHub stats / repo cards: [github-readme-stats](https://github.com/anuraghazra/github-readme-stats)
-- Streak card: [github-readme-streak-stats](https://github.com/DenverCoder1/github-readme-streak-stats)
