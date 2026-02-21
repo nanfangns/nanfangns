@@ -20,7 +20,7 @@
 ## 📊 GitHub Insights
 
 <p align="center">
-  <img height="170" src="https://github-readme-stats.vercel.app/api?username=nanfangns&show_icons=true&theme=tokyonight&hide_border=true&rank_icon=github" alt="GitHub Stats" />
+  <img height="170" src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=nanfangns&theme=github_dark" alt="GitHub Stats" />
   <img height="170" src="https://github-readme-streak-stats.herokuapp.com/?user=nanfangns&theme=tokyonight&hide_border=true" alt="GitHub Streak" />
 </p>
 
@@ -28,19 +28,13 @@
 
 ## 🚀 Featured Projects
 
-<p align="center">
-  <a href="https://github.com/nanfangns/gemini-business2api">
-    <img src="https://github-readme-stats.vercel.app/api/pin/?username=nanfangns&repo=gemini-business2api&theme=tokyonight&hide_border=true" alt="gemini-business2api" />
-  </a>
-  <a href="https://github.com/nanfangns/nanfangxu-TV">
-    <img src="https://github-readme-stats.vercel.app/api/pin/?username=nanfangns&repo=nanfangxu-TV&theme=tokyonight&hide_border=true" alt="nanfangxu-TV" />
-  </a>
-</p>
+### 🧠 [gemini-business2api](https://github.com/nanfangns/gemini-business2api)
+> OpenAI-compatible API for Gemini Business with multi-account load balancing and image generation.
 
-- **[gemini-business2api](https://github.com/nanfangns/gemini-business2api)**  
-  OpenAI-compatible API for Gemini Business, with multi-account load balancing and image generation.
-- **[nanfangxu-TV](https://github.com/nanfangns/nanfangxu-TV)**  
-  实现观影自由：0 成本、无广告、全网资源任你搜。你的私人影院，何必受制于人？
+### 📺 [nanfangxu-TV](https://github.com/nanfangns/nanfangxu-TV)
+> 实现观影自由：0 成本、无广告、全网资源任你搜。你的私人影院，何必受制于人？
+
+> iOS 风格思路：减少花哨图块，保留留白与简洁层次，在手机端阅读更稳定。
 
 ---
 
