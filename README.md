@@ -39,13 +39,20 @@
 
 ## 🚀 Featured Projects
 
-### 🧠 [gemini-business2api](https://github.com/nanfangns/gemini-business2api)
-> OpenAI-compatible API for Gemini Business with multi-account load balancing and image generation.
-
-### 📺 [nanfangxu-TV](https://github.com/nanfangns/nanfangxu-TV)
-> 实现观影自由：0 成本、无广告、全网资源任你搜。你的私人影院，何必受制于人？
-
-> iOS 风格思路：减少花哨图块，保留留白与简洁层次，在手机端阅读更稳定。
+<table>
+  <tr>
+    <td width="50%" valign="top">
+      <h3>🧠 <a href="https://github.com/nanfangns/gemini-business2api">gemini-business2api</a></h3>
+      <p>OpenAI-compatible API for Gemini Business with multi-account load balancing and image generation.</p>
+      <p><sub><b>Tags:</b> API · Gemini · Load Balancing · Image Gen</sub></p>
+    </td>
+    <td width="50%" valign="top">
+      <h3>📺 <a href="https://github.com/nanfangns/nanfangxu-TV">nanfangxu-TV</a></h3>
+      <p>实现观影自由：0 成本、无广告、全网资源任你搜。</p>
+      <p><sub><b>Tags:</b> Streaming · Mobile · Clean UI · No Ads</sub></p>
+    </td>
+  </tr>
+</table>
 
 ---
 
