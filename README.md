@@ -24,6 +24,14 @@
   <img height="170" src="https://github-readme-streak-stats.herokuapp.com/?user=nanfangns&theme=tokyonight&hide_border=true" alt="GitHub Streak" />
 </p>
 
+<!-- Snake contribution graph (auto light/dark) -->
+<picture>
+  <source media="(prefers-color-scheme: dark)"
+          srcset="https://raw.githubusercontent.com/nanfangns/nanfangns/output/dist/github-contribution-grid-snake-dark.svg" />
+  <img alt="github contribution grid snake animation"
+       src="https://raw.githubusercontent.com/nanfangns/nanfangns/output/dist/github-contribution-grid-snake.svg" />
+</picture>
+
 ---
 
 ## 🚀 Featured Projects
