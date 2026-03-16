@@ -41,6 +41,7 @@ name: Generate snake contribution graph
 
 on:
   schedule:
+    # GitHub Actions cron uses UTC.
     # Daily at 01:23 UTC (avoid :00/:30 to reduce queue contention)
     - cron: "23 1 * * *"
   workflow_dispatch:
@@ -56,8 +57,12 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
+      - uses: actions/checkout@v4
+
       - name: Generate snake SVGs
-        uses: Platane/snk/svg-only@v3
+        # NOTE: If you see "Unexpected input(s)" in logs, check the action README
+        # and adjust input names accordingly.
+        uses: Platane/snk@v3
         with:
           github_user_name: nanfangns
           outputs: |
@@ -98,6 +103,20 @@ In GitHub repo settings:
 - Ensure **Read and write permissions** is enabled.
 
 Expected: future runs can push to `output`.
+
+- [ ] **Step 5 (only if needed): Initialize `output` branch manually**
+
+If the first workflow run fails to create/push `output` (e.g. branch protection or publish step errors), initialize it once:
+
+```bash
+git checkout --orphan output
+git rm -rf .
+echo "# output artifacts" > .gitkeep
+git add .gitkeep
+git commit -m "chore: init output branch"
+git push origin output
+git checkout main
+```
 
 ---
 
@@ -158,7 +177,7 @@ Run:
 ```bash
 gh workflow run "Generate snake contribution graph" -R nanfangns/nanfangns
 ```
-Expected: command returns success (no error).
+Expected: exit code 0 and a confirmation message indicating the dispatch event was created.
 
 - [ ] **Step 2: Confirm the workflow run succeeds**
 
@@ -166,7 +185,7 @@ Run:
 ```bash
 gh run list -R nanfangns/nanfangns --workflow snake.yml -L 1
 ```
-Expected: latest run shows `completed` and `success`.
+Expected: latest run shows status `completed` and conclusion `success`.
 
 (Optional details):
 ```bash
@@ -203,6 +222,7 @@ Expected:
 ---
 
 ## Notes / 常见故障排查
+- 如果生成步骤报 `Unexpected input(s)`：说明 snk action 的 inputs 名称与计划不一致，以该 action 的 README/错误提示为准调整（常见是 `outputs` vs `output`）。
 - 如果 publish 步骤报 403 / permission denied：优先检查仓库 Actions 的 workflow permissions 是否是 Read/Write。
 - 如果 output 分支启用了保护（必须 PR / 禁止 push）：需要放开或给 Actions 开例外，否则自动更新会失败。
 - raw 链接更新有缓存：通常延迟几分钟属正常，可先用 `curl -I` 看是否已更新。
