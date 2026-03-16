@@ -59,6 +59,7 @@
 ## 🤝 Connect
 
 <p align="center">
-  <a href="https://github.com/nanfangns">GitHub</a> •
-  <a href="https://github.com/nanfangns?tab=repositories">Repositories</a>
+  <a href="mailto:nanfangns@outlook.com"><img src="https://img.shields.io/badge/Email-4285F4?style=flat-square&logo=gmail&logoColor=white" alt="Email" /></a>
+  <a href="https://github.com/nanfangns"><img src="https://img.shields.io/badge/GitHub-4285F4?style=flat-square&logo=github&logoColor=white" alt="GitHub" /></a>
+  <a href="https://github.com/nanfangns?tab=repositories"><img src="https://img.shields.io/badge/Projects-4285F4?style=flat-square&logo=github&logoColor=white" alt="Projects" /></a>
 </p>
